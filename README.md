@@ -1,4 +1,4 @@
-<h1 align="center">怪叔叔助手 · WPS Office 多宿主 AI 助手</h1>
+<img width="288" height="57" alt="image" src="https://github.com/user-attachments/assets/b66c28d9-f971-4450-8c8d-56a5a39c0883" /><h1 align="center">怪叔叔助手 · WPS Office 多宿主 AI 助手</h1>
 
 <p align="center">
   <b>本项目基于 <a href="https://github.com/lewis-hui1202/WPS-AI">lewis-hui1202/WPS-AI</a>（原"文小舟"）二次开发，遵循 MIT License。</b>
@@ -229,31 +229,9 @@ registry.registerTool({
 - Azure 需自填资源 endpoint + 部署名 + api-version；Gemini 图片输入仅支持 base64 内联
 - 图像 provider 协议绑定 toapis，换其他服务需在 `providers/image.js` 适配
 
----
-
-## 💬 反馈
-
-### 加入粉丝群
-
-扫码关注公众号，回复 `ai` 获取粉丝群链接，和其他用户交流或反馈 Bug：
-
-<img src="img/qrcode_for_gh_e26e731fb54c_258.jpg" alt="公众号二维码" width="160" />
-
-> 微信扫码 → 关注公众号 → 回复 `ai` → 进粉丝群
-
-### Bug 上报信息
-
-发现 Bug 请在群内附上：
-
-- 系统 + WPS 版本
-- 哪个宿主、哪个工具触发
-- 控制台报错（TaskPane 内右键 → 检查 / 「打开 JS 调试器」）
-- `~/.lingxi-ai/server.log` 后 50 行（永久模式）
-
----
 
 ## ⚖️ 许可协议
 
 本项目基于 **[MIT License](LICENSE)** 开源 —— 可自由使用、修改、分发、商用，保留版权与许可声明即可。
 
-> 品牌名称「怪叔叔助手」、公众号二维码及截图等资产不在 MIT 授权范围内，仅用于标识本项目。
+> 品牌名称「文小舟」、公众号二维码及截图等资产不在 MIT 授权范围内，仅用于标识本项目。
