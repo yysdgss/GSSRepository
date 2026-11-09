@@ -1,0 +1,14 @@
+{
+  "name": "怪叔叔助手",
+  "addonType": "wps",
+  "version": "1.5.2",
+  "description": "怪叔叔助手 WPS 加载项：通过 ChatGPT OAuth 登录并调用 OpenAI Responses API。",
+  "author": "guaishushu-ai",
+  "homepage": "index.html",
+  "entry": "index.html",
+  "taskpane": "taskpane.html",
+  "ribbon": "ribbon.xml",
+  "permissions": [
+    "document"
+  ]
+}

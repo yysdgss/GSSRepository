@@ -1,0 +1,35 @@
+# cmd.exe 要求 .bat 文件 CRLF 行尾，否则解析会出错
+# 默认 .bat 走 GBK（中文 Windows 默认代码页）
+*.bat        text eol=crlf working-tree-encoding=GBK
+# post-install-windows.bat / install-permanent-windows.bat 自己 chcp 65001 切 UTF-8,
+# 文件本身就是 UTF-8 存,跳过默认的 GBK 编码处理
+plugin/tools/post-install-windows.bat text eol=crlf !working-tree-encoding
+plugin/install-permanent-windows.bat  text eol=crlf !working-tree-encoding
+
+# .sh 必须 LF
+*.sh         text eol=lf
+# pkg preinstall/postinstall 没扩展名,显式标 LF,否则 Win 上拉下来 CRLF,Mac 跑 #!shebang\r 会失败
+installer-mac/scripts/preinstall  text eol=lf
+installer-mac/scripts/postinstall text eol=lf
+# .command 文件双击在 Mac Terminal 执行,也得 LF
+*.command    text eol=lf
+# AppleScript 源文件 osacompile 读它,LF 是安全选择
+*.applescript text eol=lf
+
+# 其它文本默认按 git 自动处理
+*.js         text
+*.json       text
+*.html       text
+*.css        text
+*.md         text
+*.xml        text
+*.svg        text
+
+# 图片二进制
+*.png        binary
+*.jpg        binary
+*.jpeg       binary
+*.gif        binary
+*.ico        binary
+*.zip        binary
+*.exe        binary

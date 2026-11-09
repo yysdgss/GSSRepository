@@ -1,0 +1,62 @@
+# 依赖
+node_modules/
+plugin/node_modules/
+.pnpm-store/
+
+# 构建产物 / 发布包
+dist/
+distback/
+*.zip
+*.tgz
+
+# 系统/IDE
+.DS_Store
+__MACOSX/
+.idea/
+.vscode/
+*.swp
+
+# 临时截图（用户粘贴用）
+screenshots/
+
+# 日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# 本地凭据 / 临时
+.env
+.env.local
+*.local
+
+# 个人 TODO / 笔记（private 分支取消 ignore）
+# TODO.md
+# NOTES.md
+# notes/
+
+# 个人开发脚本（private 分支取消 ignore）
+# dev/
+
+# bundled Node portable（不推到 GitHub，太大）
+plugin/runtime/
+
+# 下载官网（private 分支备份源码；site/ 内部 .gitignore 已过滤 node_modules / .output / .nuxt）
+# site/
+
+# upload-oss 工具的敏感配置 / 依赖（工具本身入 git）
+upload-oss/node_modules/
+upload-oss/oss.config.js
+
+# AI 生成的 bug 报告
+docs/bug-report.md
+
+# 外部参考代码（本地学习用，不入库）
+docs/code/
+
+# superpowers 自动生成的设计/计划 md（brainstorm/writing-plans 产物，不入库）
+# 已存在的历史文档保持跟踪；此规则只拦新生成的，防止被自动提交
+docs/superpowers/
+
+# 编码有问题的 bat（本地保留）
+plugin/tools/pre-uninstall-windows.bat
